@@ -8,7 +8,9 @@ const fruits = ref(["apple", "orange", "peach"])
 <template>
   <div>{{ message }}</div>
 
-  <label v-for="fruit in fruits" :key="fruit">
-    <input type="radio" name="fruit"> {{ fruit }}
+  <label>
+    <input type="radio" name="fruit"> {{ fruits[0] }}
+    <input type="radio" name="fruit"> {{ fruits[1] }}
+    <input type="radio" name="fruit"> {{ fruits[2] }}
   </label>
 </template>
