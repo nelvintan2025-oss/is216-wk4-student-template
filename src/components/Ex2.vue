@@ -3,7 +3,7 @@
 
     // Add code here
     const me = ref("/assets/me.png");
-    const wad = ref({
+    const obj = ref({
       src: "/assets/wad.png",
       alt: "hello",
       width: 200,
@@ -14,7 +14,7 @@
 <template>
     <!-- Add code here -->
      <img :src="me">
-     <img v-bind="wad">
+     <img v-bind="obj">
 </template>
 
 
